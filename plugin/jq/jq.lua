@@ -70,7 +70,7 @@ function Jq_command(horizontal)
   -- setup keybinding autocmd in the filter buffer:
   kmap(
     'n',
-    '<CR>',
+    '<Tab>',
     function()
       local filter = buf_text(jq_bufnr)
       set_buf_text(jq_filter(json_bufnr, filter), result_bufnr)
